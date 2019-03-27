@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="iso-8859-1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lojinha da Feh - Meus Pedidos</title>
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Amaranth|Arima+Madurai|Convergence|Dancing+Script|Kanit|Lobster|Oleo+Script" rel="stylesheet">   
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},800);
+		});
+    });
+
+</script>
+<script>
+	$(document).ready(function() {
+		$(window).scroll(function(){
+			if($(this).scrollTop() > 200){
+				$('.go-top').fadeIn(200);
+			}else{
+				$('.go-top').fadeOut(200);	
+			}
+		});
+			$('.go-top').click(function(event){
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop:0},300);
+			});
+    });
+</script>
+  </head>
+  <body div class="bodycarrinho">
+	<div class="cotainer-fluid">
+    	<nav class="navbar navbar-default menu">
+  <div class="container-fluid menu" style="	margin-top:30px;margin-left:30px;
+">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header menu" style="height:90px;">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand fernanda" href="index.html" style="color:#DA1E1E;">Lojinha da Feh</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav menuL">
+		<li><a href="#QuemSomos.html">QUEM SOMOS</a></li>
+        <li><a href="index.html">PRODUTOS</a></li>
+        <li><a href="index.html">PARCEIROS</a></li>
+        <li><a href="index.html">CONTATO</a></li>
+       <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>-->
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="O que procura?" style="margin-top:5px;">
+        </div>
+        <button type="submit" class="btn btn-default pesquisa"><img src="imgs/pesquisa.png" style="height:20px; width:17px;"></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><img src="imgs/carrinho.png" style="height:40px; width:40px; margin-top:-10px;"></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="imgs/login" style="height:38px; width:38px; margin-top:-10px;"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Fazer Login</a></li>
+            <li><a href="perfilCliente.html">Perfil</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+            <div class="container-fluid">
+    			<div class="row">
+                    <table class="table table">
+                    	<tr>
+                              <td class="active" style="text-align:left; font-weight:bold;">LISTAGEM DE PEDIDOS</td>
+                              <td class="active"></td>
+                              <td class="active"></td>
+                              <td class="active"></td>
+                        </tr>
+                        <tr>
+                              <td class="active">Código do Pedido</td>
+                              <td class="active">Data do Pedido</td>
+                              <td class="active">Situação do Pedido</td>
+                              <td class="active">Total</td>
+                        </tr>
+                            <tr>
+                            <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">3445</td>
+                            <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">23/09/2017</br></td>
+                            <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">Enviado</td>
+                            <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">R$ 12,20</br></td>
+                            </tr>
+                         <tr>
+                            <td class="active">3532</td>
+                            <td class="active">23/09/2017</br></td>
+                            <td class="active">Pendente</td>
+                            <td class="active">R$ 12,20</br></td>
+                        </tr>
+                            <tr>
+                                <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">897</td>
+                                <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">23/09/2017</br></td>
+                                <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">Enviado</td>
+                                <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">R$ 12,20</br></td>
+                            </tr>
+                         <tr>
+                            <td class="active">1234</td>
+                            <td class="active">23/09/2017</br></td>
+                            <td class="active">Enviado</td>
+                            <td class="active">R$ 12,20</br></td>
+                        </tr>
+                            <tr>
+                                <td class="info" style="background-color:#900;;color:rgba(204,204,204,1);">354</td>
+                                <td class="info" style="background-color:#900;;color:rgba(204,204,204,1);">23/09/2017</br></td>
+                                <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">Enviado</td>
+                                <td class="info" style="background-color:#900;color:rgba(204,204,204,1);">R$ 12,20</br></td>
+                            </tr>
+                         <tr>
+                            <td class="active">567</td>
+                            <td class="active">23/09/2017</br></td>
+                            <td class="active">  Enviado</td>
+                            <td class="active">R$ 12,20</br></td>
+                        </tr>
+					</table>
+                 </div>
+                </div>
+        </div>
+    </div>
+	
+    <div class="container-fluid">
+                 <div class="row" >
+                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rodape"  style="margin-top:50px;">
+                            <h1 style="margin-left:100px;">© Copyright 2017 Lojinha da Feh / Design by</h1> 
+                            <h1 style="font-weight:bold; margin-top:-33px; margin-left:490px;">Future Innovation</h1> 
+                            <h1 style="font-family: 'Arima Madurai', cursive;font-size:16px; margin-top:-32px;float:right; margin-right:250px;"> SIGA A FEH </h1>
+                           <a href="https://www.facebook.com/" target="_blank"><img src="imgs/facefeh.png" style="height:40px;display: block; width:40px; float:right;cursor:pointer; margin-top:-50px;margin-right:180px;"> </a>
+                           <a href="https://www.facebook.com/" target="_blank"> <img src="imgs/whatsfeh.png" style="height:45px; width:45px;margin-top:-52px;cursor:pointer; float:right; margin-right:120px;"> </a></div>
+                     </div>
+                    </div> 
+                   
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <a href="#" class="go-top"><img src="imgs/gototop.png" style="width:60px; height:60px;" /></a>
+  </body>
+</html>	

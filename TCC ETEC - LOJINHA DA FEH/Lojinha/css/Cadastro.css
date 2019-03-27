@@ -1,0 +1,99 @@
+#formulario{
+	width:500px;
+	margin:50px auto;
+	text-align:center;
+	position:relative;	
+}
+#formulario fieldset{
+	background:#DA1E1E;
+	border:0 none;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
+	box-shadow:0 0 15px 1px rgba(0,0,0,0.4);	
+	padding:20px 30px;
+	
+	box-sizing:border-box;
+	width:80%;
+	margin:0 10%;
+}
+#formulario fieldset:not(:first-of-type){
+	display:none;
+}
+#formulario input, #formulario textarea{
+	padding:10px;
+	border:1px solid rgba(38,128,101,0.9);
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	outline:none;
+	box-sizing:border-box;
+	width:100%;
+	font:14px font-family: 'Dancing Script', cursive;
+	color:#DA1E1E;
+	margin-bottom:10px;
+}
+#formulario h2{
+	font-family: 'Dancing Script', cursive;	
+	font-size:35px;
+}
+#formulario .acao{
+	width:100%;
+	background:#333;
+	color:white;
+	text-transform:uppercase;
+	font-weight:bold;
+	border-color:#900;
+	padding:12px 0;
+	float:left;
+}
+#formulario .acao:hover{background:#900;cursor:pointer;}
+#formulario #progress{
+	margin-bottom:30px;
+	overflow:hidden;
+	counter-reset:step;
+}
+#formulario #progress li{
+	list-style-type:none;
+	color:#000;
+	font-family: 'Dancing Script', cursive;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:18px;
+	width:33,33%;
+	float:left;
+	position:relative;
+}
+#formulario #progress li:before{
+	content:counter(step);
+	counter-increment:step;
+	width:30px;
+	display:block;
+	line-height:30px;
+	background-color:#DA1E1E;
+	color:#333;
+	border-radius:8x;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	margin:0 auto 10px auto;
+}
+#formulario #progress li:after{
+	content:'';
+	width:10%;
+	background:black;
+	height:3px;
+	position:absolute;
+	top:9px;
+	left:-80%;
+	z-index:-1;
+}
+#formulario #progress li:first-child:after{
+	content:none;
+	z-index:1;
+}
+#formulario #progress li.ativo:before, #formulario #progress li.ativo:first-child:after{
+	background:rgba(170,26,47, 0.8);
+	text-shadow:0 1px 0;
+	color:black;
+}

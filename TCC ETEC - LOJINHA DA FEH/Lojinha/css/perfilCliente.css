@@ -1,0 +1,71 @@
+ul {
+  list-style: none;
+}
+li {
+  	float: left;
+    margin: 5% 0;
+    width: calc(100% / 5);
+}
+.boxDados{
+	height:600px;
+	width:70%;
+	padding: 3em 4em 4em;
+	position:relative;
+}
+.boxInforma{
+	float:right;
+	width:50%;
+	height:100%;
+}
+.fotoUser { 
+  width: 200px; 
+  height: 200px; 
+}
+.fotoUser a{
+	font-size:17px;
+	margin-top:10px;
+	color:#DA1E1E;
+}
+.fotoUser img{ 
+	width:100%;
+	height:100%;
+}
+.form-group h1{
+	font-size:18px;
+	color:#DA1E1E;
+	font-family: 'Arima Madurai', cursive;	
+	text-align:LEFT;
+}
+.mudarSenha{
+	width:100%;	
+	height:320px;
+}
+.mudarSenha p{
+	font-size:15px;
+	color:#777;
+	margin-top:50px;
+	text-align:left;
+	font-weight:bold;
+	font-family: 'Arima Madurai', cursive;
+}
+.mudarSenha h1{
+	font-size:18px;
+	color:#DA1E1E;
+	font-family: 'Arima Madurai', cursive;	
+	text-align:LEFT;
+}
+#salvar{
+	height:40px;
+	width:120px;
+	color:white;
+	font-weight:bold;
+	border-radius: .4em;
+	margin-top:30px;
+	letter-spacing:1px;
+	border: .2em solid #DA1E1E;
+	font-size: 1.2em;
+	background:#DA1E1E;
+	font-family: 'Arima Madurai', cursive;
+	font-size:15px;
+}
+

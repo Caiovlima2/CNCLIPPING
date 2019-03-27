@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="iso-8859-1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lojinha da Feh - Cadastro</title>
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Amaranth|Arima+Madurai|Convergence|Dancing+Script|Kanit|Lobster|Oleo+Script" rel="stylesheet">   
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/index.css" rel="stylesheet">
+        <link href="Cadastro.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},800);
+		});
+    });
+
+</script>
+<script>
+	$(document).ready(function() {
+		$(window).scroll(function(){
+			if($(this).scrollTop() > 200){
+				$('.go-top').fadeIn(200);
+			}else{
+				$('.go-top').fadeOut(200);	
+			}
+		});
+			$('.go-top').click(function(event){
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop:0},300);
+			});
+    });
+	
+	$(function(){
+		var atual_fs, next_fs, prev_fs;
+		
+		$('.next').click(function(){	
+			atual_fs = $(this).parent();
+			next_fs = $(this).parent().next();
+			
+			$('#progress li').eq($('fieldset').index(next_fs)).addClass('ativo')
+			atual_fs.hide(800);
+			next_fs.show(800);
+		});
+		
+		$('.prev').click(function(){	
+			atual_fs = $(this).parent();
+			prev_fs = $(this).parent().prev();
+			
+			$('#progress li').eq($('fieldset').index(atual_fs)).removeClass('ativo')
+			atual_fs.hide(800);
+			prev_fs.show(800);
+		});
+		
+		$('#formulario input[type=submit]').click(function(){
+			return false;
+		})
+	});
+	
+</script>
+  </head>
+  <body div class="bodycarrinho">
+	<div class="cotainer-fluid">
+    	<nav class="navbar navbar-default menu">
+  <div class="container-fluid menu" style="	margin-top:30px;margin-left:30px;
+">
+    <div class="navbar-header menu" style="height:90px;">
+      <a class="navbar-brand fernanda" href="index.html" style="color:#DA1E1E;">Lojinha da Feh</a>
+    </div>   
+  </div>
+</nav>
+</div>
+            <div class="cotainer-fluid">
+            	<form id="formulario">
+                	<ul id="progress">
+                    	<li class="ativo"> Dados Pessoais</li>
+                        <li> Endereço</li>
+                        <li> Autenticação</li>
+                    </ul>
+                    
+                    <fieldset>
+                    	<h2> Dados Pessoais</h2>
+                        <input type="text" name="nome" placeholder="Nome*"/>
+                        <input type="text" name="cpf" placeholder="CPF*"/>
+                        <input type="date" name="nome"/>
+                        <input type="text" name="telefone" placeholder="Telefone*"/>
+                        <input type="text" name="celular" placeholder="Celular"/>
+                    
+                    	<input type="submit" name="next" class="next acao" value="Próximo"/>
+                    </fieldset>
+                    
+                    <fieldset>
+                    	<h2> Endereço </h2>
+                        <input type="text" name="cep" placeholder="CEP*"/>
+                        <input type="text" name="rua" placeholder="Rua/Avenida*"/>
+                        <input type="text" name="numero" placeholder="Número*"/>
+                        <input type="text" name="bairro" placeholder="Bairro*"/>
+                        <input type="text" name="complemento" placeholder="Complemento"/>
+                        <input type="text" name="uf" placeholder="UF*"/>
+                        <input type="text" name="municipio" placeholder="Município*"/>
+                        <input type="submit" name="prev" class="prev acao" value="Anterior"/>
+                        <input type="submit" name="next" class="next acao" value="Próximo"/>
+                    </fieldset>
+                  
+                    <fieldset>
+                    	<h2> Autenticação </h2>
+                        <input type="text" name="email" placeholder="Email"/>
+                        <input type="password" name="senha" placeholder="Senha"/>
+                        <input type="password" name="csenha" placeholder="Confirmar Senha"/>
+                       
+                       	<input type="submit" name="prev" class="prev acao" value="Anterior"/>
+                        <input type="submit" name="next" class="next acao" value="Enviar"/>
+                    </fieldset>
+                </form>
+                
+                <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript" src="js/function.js"></script>
+            </div>
+            
+	    <div class="container-fluid">
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rodape" style="margin-top:0;">
+                                    <h1>© Copyright 2017 Lojinha da Feh / Design by Future Innovation</h1> </br></br>
+                                    <h1 style="font-family: 'Arima Madurai', cursive;font-size:16px; margin-top:-32px; float:right; margin-right:200px;"> SIGA A FEH </h1>
+                                   <img src="imgs/facefeh.png" style="height:40px; width:40px;cursor:pointer; margin-top:-45px; float:right;margin-right:100px"> 
+                                   <img src="imgs/whatsfeh.png" style="height:45px; width:45px;margin-top:-45px;cursor:pointer;float:right; margin-right:50px">
+                         </div>
+                    </div>
+             	</div>
+    </div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+    
+    <a href="#" class="go-top"><img src="imgs/gototop.png" style="width:60px; height:60px;" /></a>
+  </body>
+</html>	

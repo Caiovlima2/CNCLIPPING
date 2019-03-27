@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Perfil</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/full-slider.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Amaranth|Arima+Madurai|Convergence|Dancing+Script|Kanit|Lobster|Oleo+Script" rel="stylesheet">   
+     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/perfilCliente.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},800);
+		});
+    });
+
+</script>
+<script>
+	$(document).ready(function() {
+		$(window).scroll(function(){
+			if($(this).scrollTop() > 200){
+				$('.go-top').fadeIn(200);
+			}else{
+				$('.go-top').fadeOut(200);	
+			}
+		});
+			$('.go-top').click(function(event){
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop:0},300);
+			});
+    });
+</script>
+  </head>
+  <body>
+<div class="cotainer-fluid">
+    	<nav class="navbar navbar-default menu">
+  <div class="container-fluid menu" style="	margin-top:30px;margin-left:30px;
+">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header menu" style="height:90px;">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand fernanda" href="#" style="color:#DA1E1E;">Lojinha da Feh</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav menuL" style="margin-top:-10px;">
+		<li><a href="#quemsomos">QUEM SOMOS</a></li>
+        <li><a href="#produtos">PRODUTOS</a></li>
+        <li><a href="#">PARCEIROS</a></li>
+        <li><a href="#">CONTATO</a></li>
+
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="O que procura?" style="margin-top:5px;">
+        </div>
+        <button type="submit" class="btn btn-default pesquisa"><img src="imgs/pesquisa.png" style="height:20px; width:17px;"></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Carrinho.html"><img src="imgs/carrinho.png" style="height:40px; width:40px; margin-top:-10px; margin-right:20px;"></a></li>
+        <li class="dropdown" style="margin-left:10px;">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="imgs/login" style="height:38px; width:38px; margin-top:-10px;"><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="Cadastro.html">Fazer Login</a></li>
+            <li><a href="perfilCliente.html">Pefil</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</div>  
+		<div class="container-fluid">
+        	<div class="row">
+            	<div class="boxDados">
+        				<ul>
+                              <li> 
+                              	<div class="fotoUser">
+                                	<img src="imgs/usuarioPadrao.jpg"/>
+                                    <a href="#"> Alterar foto</a>
+                                </div> 
+                              </li>
+        				</ul>
+                        
+                        <div class="boxInforma">
+                            <form>
+                            <!--PROVISORIO************ ADC OS CAMPOS NECESSARIOS-->
+                                 <div class="form-group">
+                                  <h1>NOME:</h1><input id="nome" class="form-control" type="text" name="nomeUser" readonly>
+                                  <h1>EMAIL:</h1><input id="email" class="form-control" type="text" name="emailUser" readonly>
+                                  <h1>TELEFONE:</h1><input id="telefone" class="form-control" type="text" name="teleUser" readonly>
+                                  <h1>TELEFONE CELULAR 1:</h1><input id="" class="form-control" type="text" name="" readonly>
+                                  <h1>TELEFONE CELULAR 2:</h1><input id="" class="form-control" type="text" name="" readonly>
+                                  <h1>CPF:</h1><input id="Csenha" class="form-control" type="text" name="cpfUser" readonly>
+                                  <h1>RG:</h1><input id="" class="form-control" type="text" name="" readonly>
+                                  <h1>CEP:</h1><input id="" class="form-control" type="text" name="" readonly>
+                                  <h1>RUA:</h1><input id="" class="form-control" type="text" name="" readonly>
+                                  <h1>MORADIA:</h1><input id="" class="form-control" type="text" name="" readonly>
+                                  <h1>NÚMERO DA CASA:</h1><input id="" class="form-control" type="text" name="" readonly>
+                                 <h1>ATIVAÇÃO</h1><input id="" class="form-control" type="text" name="" readonly>
+                                 </div>
+                                                                  
+                                 <div class="mudarSenha">
+                                 	<p>ALTERAR SENHA</p><br>
+                                 		  <h1>SENHA ANTIGA:</h1><input id="senhaA" class="form-control" type="text" name="senhaA">
+                                          <h1>NOVA SENHA:</h1><input id="Nsenha" class="form-control" type="text" name="Nsenha">
+                                          <h1>CONFIRMAR SENHA:</h1><input id="telefone" class="form-control" type="text" name="Csenha">
+                                 </div>
+                                 
+                                 <input  value="SALVAR" type="submit" id="salvar">
+                            </form>
+                            <p></p><br>
+                        </div>
+                 </div>
+			</div>
+		</div>
+
+    <div class="container-fluid" style="position: fixed;">
+                 <div class="row" >
+                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 rodape"  style="margin-top:280px;">
+                            <h1 style="margin-left:100px;">© Copyright 2017 Lojinha da Feh / Design by</h1> 
+                            <h1 style="font-weight:bold; margin-top:-33px; margin-left:490px;">Future Innovation</h1> 
+                            <h1 style="font-family: 'Arima Madurai', cursive;font-size:16px; margin-top:-32px;float:right; margin-right:250px;"> SIGA A FEH </h1>
+                           <a href="https://www.facebook.com/" target="_blank"><img src="imgs/facefeh.png" style="height:40px;display: block; width:40px; float:right;cursor:pointer; margin-top:-50px;margin-right:180px;"> </a>
+                           <a href="https://www.facebook.com/" target="_blank"> <img src="imgs/whatsfeh.png" style="height:45px; width:45px;margin-top:-52px;cursor:pointer; float:right; margin-right:120px;"> </a></div>
+                     </div>
+                    </div> 
+                   
+    </div>
+
+</body>
+</html>

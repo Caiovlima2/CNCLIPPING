@@ -1,0 +1,383 @@
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #900;
+}
+.menu{
+	background-color:#fff;
+}
+
+.menuL{
+	font-size:12px;
+	font-weight:bold;
+	margin-top:10px;
+	font-family: 'Arima Madurai', cursive;
+	margin-left:80px;
+}
+.carrinho h1{
+	font-family: 'Dancing Script', cursive;
+	text-align:center;
+	margin-top:150px;
+}
+.pesquisa{
+	margin-top:5px;
+}
+.pesquisa:hover{
+	background-color:#DA1E1E;	
+}
+.fernanda{
+	font-size:40px;
+	font-family:"MS Serif", "New York", serif;
+}
+.quemsomos{	
+	height:800px;
+	width:100%;
+}
+.quemsomos img{
+	opacity:0.05;
+}
+.quemsomos a{
+	color:#666;
+}
+.quemsomos h1{
+	font-size:50px;
+	margin-top:-650px;
+	margin-left:150px;
+	font-family: 'Dancing Script', cursive;
+	text-align:center;
+	font-weight:none;
+	color:#000;
+	text-decoration:none;
+	z-index:10000;	
+}
+.quemsomos h2{
+	font-size:20px;
+	margin-top:50px;
+	margin-left:150px;
+	font-family:'Kanit', cursive;
+	text-align:center;
+	color:#DA1E1E;
+	margin-left:-20px;
+	text-decoration:none;
+	font-style:italic;
+	z-index:10000;	
+}
+.quemsomos p{
+	font-size:16px;
+	margin-top:50px;
+	margin-right:-450px;
+	font-family:'Kanit', cursive;
+	text-align:center;
+	color:#666;
+	text-decoration:none;
+	font-style:italic;
+	z-index:10000;	
+}
+.fotoLoja{
+	float:right;
+	margin-top:50px;	
+	z-index:100000;
+	text-align:center;
+	height:300px;
+	margin-right:280px;
+	width:500px;
+}
+.img{
+	
+	width:100%;
+	height:300px;
+}
+.categorias {
+	height:100px;
+	width:900px;
+}
+.categorias tr td {
+	cursor:pointer;
+}
+.list-group{
+	font-family:'Kanit', cursive;
+	margin-top:50px;
+	text-align:center;
+	font-size:18px;	
+}
+.categorias a{
+	color:#DA1E1E;
+	font-weight:bold;
+	margin-left:0;
+	font-family:20px;
+	font-family:'Kanit', cursive;	
+}
+.produtosarea a{
+	text-decoration:none;
+}
+.produtosarea{
+	width:108%;
+	margin-left:-50px;
+	text-decoration:none;
+	height:700px;
+	margin:0auto;
+	margin-top:0;
+}
+.produtosarea h1{
+	text-decoration:none;
+	font-size:55px;
+	margin-top:90px;
+	margin-left:100px;
+	font-family:'Kanit', cursive;
+	text-align:center;
+	color:#000;
+	z-index:10000;	
+}
+.produtosarea h1 a{
+	color:rgba(0,0,0,1);
+}
+.produto{
+
+	width:250px;
+	height:300px;
+	text-align:center;
+	background-color:#000;
+	float: left;
+	margin-left: 10px;
+}
+.produto p{
+	font-size:18px;
+	text-align:center;
+	font-family: 'Arima Madurai', cursive;
+	font-weight:bold;
+	margin-top:13px;
+	color:#DA1E1E;
+}
+
+.produto img:hover{
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+.pagination{
+	margin-left:600px;
+	margin-top:100px;
+}
+.pagination li a{
+	color:#DA1E1E;	
+}
+.pagination li a:hover{
+	color:#DA1E1E;	
+}
+.navegar span{
+	color:rgba(0,0,0,1);	
+}
+.hoverzoom {
+	position: relative;
+    width: 250px;
+	margin-left:-15px;
+    overflow: hidden;
+}
+.hoverzoom > img {
+   width: 100%; 
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover > img {
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+	    -ms-transform: scale(1.5);
+	     -o-transform: scale(1.5);
+	        transform: scale(1.5);
+	
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+.hoverzoom .retina{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+    border-radius: 2px;
+    text-align: center;
+    padding: 30px;
+ 
+    -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	      -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	         transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+    
+}
+.hoverzoom .retina p {
+	color: #fff;
+	margin-top:-10px;
+	font-family:'Kanit', cursive;
+	text-align:center;
+}
+.hoverzoom .retina a {
+	display: block;
+	width: 150px;
+	background: #CC0000;
+	border: 1px solid #900;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 15px;
+	margin: 16px auto 0;
+}
+.imgproduto img{
+	width:500px;
+	height:350px;
+	float:left;
+	margin-top:80px;
+	border-width: 0.3px;
+    border-style: dotted;
+    border-color: #999;
+	margin-left:130px;
+}
+.comprar{
+	width:500px;
+	height:250px;
+	background-color:#F8F8FF;
+	font-size:14px;
+	border-width: 2px;
+    border-style: dashed;
+    border-color: #999;
+	float:left;
+	margin-top:80px;
+	text-align:center;
+	margin-left:130px;
+}
+.comprar p{
+	font-family: 'Arima Madurai', cursive;
+	font-size:20px;
+	margin-left:-200px;
+	margin-top:50px;
+}
+.comprar h1{
+	font-family: 'Arima Madurai', cursive;
+	font-size:45px;
+	margin-top:-45px;
+	margin-left:90px;
+	color:#900;
+}	
+.btn-success{
+	font-size:25px;
+	margin-left:10px;
+	color:rgba(0,0,0,1);
+	font-family: 'Arima Madurai', cursive;
+	font-weight:bold;
+	margin-top:30px;
+	width:200px;
+	height:60px;
+	color:rgba(204,204,204,1);
+	background-color:#900;
+	border-color:#900;
+}
+.btn-success:hover{
+	background-color:#900;
+	color:rgba(204,204,204,1);
+	border-color:#900;
+}
+.btn-success p{
+	font-size:14px;
+	margin-left:40px;
+	margin-top:-5px;
+}
+.descriçao{
+	width:500px;
+	height:350px;
+	background-color:#F8F8FF;
+	font-size:14px;
+	border-width: 2px;
+    border-style: dashed;
+    border-color: #999;
+	margin-top:80px;
+	float:right;
+	text-align:center;
+	margin-right:130px;
+}
+.descriçao h1{
+	font-size:40px;
+	font-family: 'Dancing Script', cursive;
+}
+.descriçao p{
+	font-family: 'Arima Madurai', cursive;
+	text-align:justify;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:30px;
+}
+.caracteristicas{
+	width:500px;
+	height:350px;
+	background-color:#F8F8FF;
+	font-size:14px;
+	border-width:2px;
+    border-style: dashed;
+    border-color: #999;
+	float:right;
+	margin-top:80px;
+	text-align:center;
+	margin-right:117px;
+}
+.info{
+	color:rgba(0,0,0,1);
+	font-weight:bold;	
+}
+.caracteristicas h1{
+	font-size:40px;
+	font-family: 'Dancing Script', cursive;
+}
+.table tr td{
+	font-family: 'Arima Madurai', cursive
+}
+.caracteristicas p{
+	font-family: 'Arima Madurai', cursive;
+	text-align:justify;
+	margin-left:20px;
+	margin-right:20px;
+	font-family: 'Arima Madurai', cursive
+	margin-top:30px;
+}
+.tabelaTotal{
+	float:right;
+	width:500px;
+	font-weight:bold;
+	font-family: 'Arima Madurai', cursive;
+	font-size:18px;
+	
+}
+.go-top{
+	position:fixed;	
+	bottom:2em;
+	right:2em;	
+	padding: .5em 1em;
+	text-transform:uppercase;
+	display:none;
+}
+.rodape{
+	background-color:#F8F8FF;
+	width:100%;
+	height:150px;
+	margin-top:600px;
+}
+.rodape h1{
+	margin-top:60px;
+	margin-left:40px;
+	font-size:20px;
+	font-family: 'Dancing Script', cursive;	
+	font-style:italic;
+}
+
